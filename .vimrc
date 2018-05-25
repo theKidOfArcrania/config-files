@@ -11,3 +11,5 @@ set ai
 
 set ff=unix
 set number
+
+nmap <F8> :TagbarToggle<CR>
