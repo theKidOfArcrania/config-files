@@ -52,6 +52,11 @@ exec --no-startup-id ~/start-redshift
 bindsym XF86MonBrightnessUp exec backlight --inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec backlight --dec 10 # decrease screen brightness
 
+# Volume controls
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
 # Notification if battery is low
 exec --no-startup-id ~/check_batt.sh
 
